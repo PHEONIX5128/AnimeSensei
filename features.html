@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - AnimeSensei</title>
+    <link rel="stylesheet" href="features.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="JavaScript" href="script.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars-container"></div>
+    <div class="shooting-star"></div>
+        <!-- Navbar -->
+    <nav class="navbar">
+        <a class="logo" href="index.html">Anime Sensei</a>
+
+        <ul class="nav-links" id="nav-menu">
+            <!-- Added ID for JS -->
+            <li>
+                <a href="index.html">
+                    <span class="nav-text">Home</span>
+                    <img src="images/icons8-home-64.png" alt="Home Icon" class="nav-icon">
+                </a>
+            </li>
+            <li>
+                <a href="features.html">
+                    <span class="nav-text">Features</span>
+                    <img src="images/icons8-info-50.png" alt="Features Icon" class="nav-icon">
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <span class="nav-text">Commands</span>
+                    <img src="images/icons8-code-64.png" alt="Commands Icon" class="nav-icon">
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <span class="nav-text">Owner</span>
+                    <img src="images/icons8-crown-64.png" alt="Owner Icon" class="nav-icon">
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <span class="nav-text">Invite Bot</span>
+                    <img src="images/icons8-bot-64.png" alt="Invite Bot" class="nav-icon">
+                </a>
+            </li>
+            <li id="music-btn">
+                <a href="javascript:void(0);">
+                    <!-- Prevent default link behavior -->
+                    <span class="nav-text">Music</span>
+                    <img src="images/icons8-play-64.png" id="music-icon" alt="Music Icon" class="nav-icon">
+                </a>
+            </li>
+        </ul>
+
+        <!-- Move audio outside the button -->
+        <audio id="bg-music" loop>
+            <source src="music/bg3.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Hamburger Menu Button -->
+        <div class="hamburger" id="hamburger">
+            <img src="images/icons8-menu-64.png" alt="Menu Icon">
+        </div>
+    </nav>
+    
+    <section class="AS-Feature">
+        <h1>Explore AnimeSensei Features</h1>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h2>⭐ Character Collection</h2>
+                <p>Summon and collect over 1000+ anime characters with unique abilities.</p>
+            </div>
+            <div class="feature-item">
+                <h2>⚔ Battle System</h2>
+                <p>Engage in strategic battles with your favorite anime characters.</p>
+            </div>
+            <div class="feature-item">
+                <h2>🎭 Special Moves</h2>
+                <p>Each character has exclusive special moves and ultimate attacks.</p>
+            </div>
+            <div class="feature-item">
+                <h2>💰 In-Game Currency</h2>
+                <p>Earn Yen to summon characters, train, and unlock new abilities.</p>
+            </div>
+            <div class="feature-item">
+                <h2>🔥 Training & Evolution</h2>
+                <p>Level up your characters and evolve them into stronger versions.</p>
+            </div>
+            <div class="feature-item">
+                <h2>🌠 Summon System</h2>
+                <p>Try your luck in banners to summon rare and legendary anime characters.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 AnimeSensei. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

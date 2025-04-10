@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About AnimeSensei</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="stars-container"></div>
+    <div class="shooting-star"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a class="logo" href="index.html">Anime Sensei</a>
+
+        <ul class="nav-links" id="nav-menu">
+            <!-- Added ID for JS -->
+            <li>
+                <a href="index.html">
+                    <span class="nav-text">Home</span>
+                    <img src="icons8-home-64.png" alt="Home Icon" class="nav-icon">
+                </a>
+            </li>
+            <li>
+                <a href="features.html">
+                    <span class="nav-text">Features</span>
+                    <img src="icons8-info-50.png" alt="Features Icon" class="nav-icon">
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <span class="nav-text">Commands</span>
+                    <img src="icons8-code-64.png" alt="Commands Icon" class="nav-icon">
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <span class="nav-text">Owner</span>
+                    <img src="icons8-crown-64.png" alt="Owner Icon" class="nav-icon">
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <span class="nav-text">Invite Bot</span>
+                    <img src="icons8-bot-64.png" alt="Invite Bot" class="nav-icon">
+                </a>
+            </li>
+            <li id="music-btn">
+                <a href="javascript:void(0);">
+                    <!-- Prevent default link behavior -->
+                    <span class="nav-text">Music</span>
+                    <img src="icons8-play-64.png" id="music-icon" alt="Music Icon" class="nav-icon">
+                </a>
+            </li>
+        </ul>
+
+        <!-- Move audio outside the button -->
+        <audio id="bg-music" loop>
+            <source src="bg1.mp3" type="audio/mpeg">
+            <source src="bg3.mp3" type="audio/mpeg">
+            <source src="bg2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Hamburger Menu Button -->
+        <div class="hamburger" id="hamburger">
+            <img src="icons8-menu-64.png" alt="Menu Icon">
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Welcome to AnimeSensei!</h1>
+        <p>Unleash Your Anime Adventure on Discord!</p>
+        <img class="Discord-png" src="Discord.png" alt="Discord">
+    </section>
+
+    <!-- Why Use AnimeSensei Section -->
+    <section id="why-use-animesensei" class="features">
+        <h2>🌟 Why Join AnimeSensei?</h2>
+        <div class="feature-cards">
+            <div class="feature">
+                <h3>🎮 Battle System</h3>
+                <p>Fight anime characters in turn-based combat.</p>
+            </div>
+            <div class="feature">
+                <h3>🔮 Summoning</h3>
+                <p>Collect rare anime characters from different series.</p>
+            </div>
+            <div class="feature">
+                <h3>⚡ Training & Leveling</h3>
+                <p>Train characters and make them stronger.</p>
+            </div>
+            <div class="feature">
+                <h3>🏆 Leaderboard</h3>
+                <p>Compete with other players & climb the rankings.</p>
+            </div>
+            <div class="feature">
+                <h3>📰 Anime Updates</h3>
+                <p>Stay informed with the latest anime news and upcoming releases!</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script> <!-- Moved script to the end -->
+</body>
+
+</html>
