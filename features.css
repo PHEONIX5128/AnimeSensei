@@ -1,0 +1,354 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    /* Width of the scrollbar */
+
+}
+
+::-webkit-scrollbar-track {
+    background: #0B0E0F;
+    /* Background color */
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #75020f;
+    /* Scrollbar color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px #75020f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2b0307;
+    /* Color when hovered */
+}
+
+body {
+    background-color: #0B0E0F;
+    color: white;
+    cursor: url("Png's/Arrow.cur") 20 20, auto;
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 18px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background: #0B0E0F;
+    backdrop-filter: blur(15px);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #2b0307;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 20px #51080d;
+    border-radius: 1rem;
+
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #75020f;
+    transition: all 0.3s ease;
+    cursor: url("Png's/Hand.cur") 20 20, auto;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links li {
+    position: relative;
+    text-align: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    gap: 10px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+    border: 2px solid #0B0E0F;
+    cursor: url("Png's/Hand.cur") 20 20, auto;
+}
+
+.nav-text {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.nav-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px 10px 20px 10px;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #51080d;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.nav-links a:hover .nav-text {
+    opacity: 0;
+}
+
+.nav-links a:hover .nav-icon {
+    opacity: 1;
+}
+
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    /* Hide by default */
+}
+
+/* Feature Section */
+.features {
+    padding: 60px 20px;
+    text-align: center;
+    background: #0B0E0F;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #51080d;
+}
+
+.feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature {
+    background: #51080d;
+    padding: 25px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 3px 3px 10px #0B0E0F;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.feature:hover {
+    transform: translateY(-8px);
+}
+
+.feature h3 {
+    font-size: 22px;
+    color: #0B0E0F;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: #0B0E0F;
+        width: 200px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.hamburger img {
+    width: 40px;
+    height: auto;
+}
+
+/* Header Fix */
+.about-content {
+    padding-top: 100px;
+    /* Add space below fixed header */
+    scroll-margin-top: 100px;
+    /* Anchor link adjustment */
+}
+
+/* Existing Styles from Previous Pages */
+body {
+    background: #0B0E0F;
+    color: #fff;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background: #0B0E0F;
+    backdrop-filter: blur(15px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+/* About Page Specific Styles */
+.about-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.team-member {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+}
+
+/* Enhanced Header Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background: #0B0E0F;
+    backdrop-filter: blur(15px);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.3);
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.1);
+}
+
+.stars-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: -9999;
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: twinkle infinite alternate, moveStars linear infinite;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+
+@keyframes moveStars {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes shootingStar {
+    0% {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(0) translateY(0);
+        opacity: 50%;
+    }
+
+    100% {
+        transform: translateX(-40vw) translateY(30vh);
+        opacity: 0;
+    }
+}
+
+.shooting-star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0;
+    animation: shootingStar linear 2s;
+}
+
+/* 🎵 Music Button Styles */
+#music-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+
+#music-btn img {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px 10px 20px 10px;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #51080d;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#music-btn:hover img {
+    opacity: 1;
+}
