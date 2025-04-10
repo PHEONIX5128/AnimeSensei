@@ -34,7 +34,7 @@
 body {
   background-color: #0B0E0F;
   color: white;
-  cursor: url("Arrow.cur") 20 20, auto;
+  cursor: url("Png's/Arrow.cur") 20 20, auto;
   font-family: "Sour Gummy", sans-serif;
   font-size: 18px;
 }
@@ -67,7 +67,7 @@ body {
   text-decoration: none;
   color: #75020f;
   transition: all 0.3s ease;
-  cursor: url("Hand.cur") 20 20, auto;
+  cursor: url("Png's/Hand.cur") 20 20, auto;
 }
 
 .logo:hover {
@@ -99,7 +99,7 @@ body {
   transition: all 0.3s ease-in-out;
   border-radius: 15px;
   border: 2px solid #0B0E0F;
-  cursor: url("Hand.cur") 20 20, auto;
+  cursor: url("Png's/Hand.cur") 20 20, auto;
 }
 
 .nav-text {
@@ -144,7 +144,8 @@ body {
   height: 100vh;
   text-align: center;
   padding: 20px;
-  border-bottom: 2px solid #75020f;
+  border-bottom: 1px solid #75020f;
+  border-radius: 15px;
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
   box-shadow: 0 8px 20px #51080d;
 
@@ -152,7 +153,7 @@ body {
 
 .hero h1 {
   font-size: 50px;
-  color: #51080d;
+  color: #75020f;
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
 }
 
@@ -165,14 +166,18 @@ body {
 /* Feature Section */
 .features {
   padding: 60px 20px;
+  border-bottom: 2px solid #75020f;
+  border-top: 1px solid #75020f;
+  border-radius: 15px;
   text-align: center;
+
   background: #0B0E0F;
 }
 
 .features h2 {
   font-size: 36px;
   margin-bottom: 30px;
-  color: #51080d;
+  color: #75020f;
 }
 
 .feature-cards {
@@ -222,7 +227,7 @@ body {
 
     .hamburger {
         display: block;
-        cursor: url("Hand.cur") 20 20, auto;
+        cursor: pointer;
     }
 }
 
@@ -377,7 +382,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  border: 2px solid #51080d;
+  border: 2px solid #75020f;
   transition: opacity 0.3s ease-in-out;
 }
 
